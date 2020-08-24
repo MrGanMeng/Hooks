@@ -2,3 +2,7 @@
 /scripts
 /config
 .history
+/src
+.js
+.tsx
+.less

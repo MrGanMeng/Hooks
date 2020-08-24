@@ -78,11 +78,25 @@ export default defineConfig({
               path: '/list',
               component: './ListTableList',
             },
+
+            // 计划信息
             {
-              name: 'searchTable',
+              name: 'planInfo',
               icon: 'table',
-              path: '/searchTable',
-              component: './SearchTable',
+              path: '/planInfo',
+              routes: [
+                {
+                  name: 'planList',
+
+                  path: '/planInfo/planList',
+                  component: './planInfo/planList',
+                },
+                {
+                  name: 'addPlan',
+                  path: '/planInfo/addPlan',
+                  component: './planInfo/addPlan',
+                },
+              ],
             },
             {
               component: './404',

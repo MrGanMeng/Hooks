@@ -50,5 +50,7 @@ export default {
   'menu.editor.mind': '脑图编辑器',
   'menu.editor.koni': '拓扑编辑器',
 
-  'menu.searchTable': '查询表格',
+  'menu.planInfo': '计划信息',
+  'menu.planInfo.planList': '计划列表',
+  'menu.planInfo.addPlan': '新增计划',
 };

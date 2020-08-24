@@ -1,0 +1,32 @@
+@rem: 1/1px;
+.for(@i) when (@i<=32) {
+  @size: @i;
+  .for(@i+1);
+  .m-l-@{size}{
+    margin-left: @size/@rem;
+  }
+  .m-r-@{size}{
+    margin-right: @size/@rem;
+  }
+  .m-t-@{size}{
+    margin-top: @size/@rem;
+  }
+  .m-b-@{size}{
+    margin-bottom: @size/@rem;
+  }
+
+  .p-l-@{size}{
+    padding-left: @size/@rem;
+  }
+  .p-r-@{size}{
+    padding-right: @size/@rem;
+  }
+  .p-b-@{size}{
+    padding-bottom: @size/@rem;
+  }
+  .p-t-@{size}{
+    padding-top: @size/@rem;
+  }
+  
+}
+.for(1);
