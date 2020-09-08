@@ -1,1 +1,3 @@
-export interface TableListItem {}
+export interface TableListItem {
+  key: number;
+}

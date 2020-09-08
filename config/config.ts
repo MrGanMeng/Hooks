@@ -99,6 +99,30 @@ export default defineConfig({
               ],
             },
             {
+              name: 'hook',
+              icon: 'ZhihuOutlined',
+              path: '/hook',
+              routes: [
+                {
+                  name: 'hookList',
+                  path: '/hook/hookList',
+                  component: './Hook',
+                },
+              ],
+            },
+            {
+              name: 'hero',
+              icon: 'SketchOutlined',
+              path: '/hero',
+              routes: [
+                {
+                  name: 'heroList',
+                  path: 'hero/heroList',
+                  component: './HeroList',
+                },
+              ],
+            },
+            {
               component: './404',
             },
           ],

@@ -53,4 +53,10 @@ export default {
   'menu.planInfo': '计划信息',
   'menu.planInfo.planList': '计划列表',
   'menu.planInfo.addPlan': '新增计划',
+
+  'menu.hook': 'hook',
+  'menu.hook.hookList': 'hook列表',
+
+  'menu.hero': '王者荣耀',
+  'menu.hero.heroList': '英雄列表',
 };
