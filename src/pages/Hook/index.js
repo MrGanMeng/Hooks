@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { Card, Tabs } from 'antd';
 import UseState from './Component/UseState';
 import UseEffect from '@/pages/Hook/Component/UseEffect';
+import UseRef from './Component/UseRef';
+import { PageContainer } from '@ant-design/pro-layout';
 
 const { TabPane } = Tabs;
 
@@ -19,6 +21,7 @@ const HookList = [
   {
     name: 'useRef',
     id: 3,
+    component: <UseRef />,
   },
   {
     name: 'useImperativeHandle',
@@ -36,13 +39,15 @@ const Hook = () => {
   };
 
   return (
-    <Tabs activeKey={activeKey} type="card" onTabClick={saveActiveKey}>
-      {HookList.map((item) => (
-        <TabPane tab={item.name} key={item.id}>
-          <Card title={item.name}>{item?.component || item.name}</Card>
-        </TabPane>
-      ))}
-    </Tabs>
+    <PageContainer>
+      <Tabs activeKey={activeKey} type="card" onTabClick={saveActiveKey}>
+        {HookList.map((item) => (
+          <TabPane tab={item.name} key={item.id}>
+            <Card title={item.name}>{item?.component || item.name}</Card>
+          </TabPane>
+        ))}
+      </Tabs>
+    </PageContainer>
   );
 };
 

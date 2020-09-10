@@ -2,6 +2,12 @@
 .for(@i) when (@i<=32) {
   @size: @i;
   .for(@i+1);
+  .m-@{size} {
+    margin: @size/@rem;
+  }
+  .p-@{size} {
+    padding:@size/@rem;
+  }
   .m-l-@{size}{
     margin-left: @size/@rem;
   }

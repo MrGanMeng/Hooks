@@ -49,9 +49,15 @@ const filter = [
     value: 'taskName',
   },
   {
-    name: 'input',
+    name: 'datePicker',
+    label: '创建时间',
+    value: 'createTime',
+  },
+  {
+    name: 'select',
     label: '状态',
     value: 'status',
+    optionList: [{ value: 1, label: '进行中' }],
   },
 ];
 const PlanList = () => {

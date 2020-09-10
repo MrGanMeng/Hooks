@@ -59,4 +59,7 @@ export default {
 
   'menu.hero': '王者荣耀',
   'menu.hero.heroList': '英雄列表',
+
+  'menu.css': 'CSS样式练习',
+  'menu.css.flex': '弹性布局',
 };

@@ -10,6 +10,7 @@ interface buttonProps {
   children?: JSX.Element;
   disabled?: boolean;
   loading?: boolean;
+  style?: object;
 }
 
 export const PrimaryButton = (props: buttonProps) => {

@@ -123,6 +123,17 @@ export default defineConfig({
               ],
             },
             {
+              name: 'css',
+              path: './css',
+              routes: [
+                {
+                  name: 'flex',
+                  path: 'css/flex',
+                  component: './Css/Flex',
+                },
+              ],
+            },
+            {
               component: './404',
             },
           ],
